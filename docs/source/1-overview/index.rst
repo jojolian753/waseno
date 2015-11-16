@@ -86,17 +86,46 @@ variables to worry about.
 Energy Source
 -------------------------------------------------------------------------------
 
+When installing an automated irrigation or watering system, installing extra
+electrical installation can be one of deal breakers. On top of the water
+installation, you would need extra wires to deliver power to valves
+and sensors.
 
+To make it possible for our watering sensor nodes to be truly modular and
+decoupled from electrical installation restraints, we thought we would
+use a small solar panel coupled to a lithium battery to meet the energy
+requirements of a sensor node.
+
+The embedded platform needs to be powered up, and consumes less than 1W.
+The biggest energy requirement is that of the solenoid valves consuming
+5.28W per solenoid. That puts the peak consumption at 22W if we activate
+all 4 solenoids at once.
+
+However if we program our mcu to activate one solenoid at a time, we can reduce
+peak power requirement to 6W.
+
+With a 14,8v li-ion battery pack (4*3.7v), and a 12v, 5W solar panel, we
+should be able to power a watering node.
+
+The arduino breakout board can be directly powered by the pack, since the DC
+power jack is rated at 7V–15V DC input.
+
+If there are ways to reduce power consumption, it would be by chosing more
+energy efficient water valve actuators to do so.
 
 
 -------------------------------------------------------------------------------
 Housing
 -------------------------------------------------------------------------------
 
+For the housing, we know that water and electricity mix badly. We want to
+keep the electronic components dry, so the housing needs to be waterproof.
+
+
+
 
 Some of the objectives and constraints of the project:
 
-- Be battery powered and solar charged using a 5w, 12v PV panel.
 - Manage the available energy in order to actuate the solenoid valves,
   measure regularly soil moisture using capacitance and communicate
   the relevant data gathered intel's IoT analytics website.
