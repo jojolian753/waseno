@@ -122,20 +122,28 @@ For the housing, we know that water and electricity mix badly. We want to
 keep the electronic components dry, so the housing needs to be waterproof.
 
 
+-------------------------------------------------------------------------------
+Administration
+-------------------------------------------------------------------------------
+
+A mobile application will be developped to showcase/demo the watering sensor
+node. Given the RESTful interface exposed on our sensor node, designing
+an administration dashboard is relatively straight-forward. Being already
+familiar with python, we'll probably use that in the begining.
+
+The node.js support is however very tempting. It has the big advantage to
+write for instance the server and client side of our web service in one
+language.
 
 
-Some of the objectives and constraints of the project:
+-------------------------------------------------------------------------------
+Cost
+-------------------------------------------------------------------------------
 
-- Manage the available energy in order to actuate the solenoid valves,
-  measure regularly soil moisture using capacitance and communicate
-  the relevant data gathered intel's IoT analytics website.
-- Try to stay below 100 euros per 4 garden regions or plants.
+We mentioned deal breakers earlier. One very valid deal breaker is cost.
+An effort was made to try and stay below 100 euros per 4 garden regions or
+plants. We already are over budget, maybe we can find cost reductions during
+development.
 
-
-
-A mobile app will be developped to showcase/demo the watering sensor node.
-
-
-
-Project description,
-Solution,
+For instance in future interations of this project we could move to a cheaper
+breakout board, find a more energy efficient and cheaper valve solution.
