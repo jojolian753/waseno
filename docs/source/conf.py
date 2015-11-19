@@ -50,7 +50,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'WASENO'
-copyright = u'2015, Joe R. Nassimian'
+copyright = u'2015, Joe R. Nassimian, Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License'
 author = u'Joe R. Nassimian'
 
 # The version info for the project you're documenting, acts as replacement for

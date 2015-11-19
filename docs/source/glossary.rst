@@ -25,3 +25,9 @@ Glossary
         can help the watering sensor nodes to detect for instance
         discrepancies between moiture sensor readings and the weather
         stations's rain gauge.
+
+    MCU
+        MicroController Unit is a small computer on a single computer chip
+        designed for embedded applications. It contains a processor core,
+        memory, and programmable input/output peripherals connected through
+        an addressable system bus.
