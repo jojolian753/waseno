@@ -52,7 +52,7 @@ be using here.
 
 We picked a solenoid valve with ``3/4 inch`` inlet, and 4 ``3/8 inch`` outlets.
 So it's basically 4 NC (normally closed) solenoid valves rated at
-``12V, 440mA``, that share the water input line like the one you probably have
+``12V, 450mA``, that share the water input line like the one you probably have
 in your washing machine:
 
 .. image:: pics/solenoid-valve-aggregate.jpg
